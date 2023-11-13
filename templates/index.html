@@ -1,0 +1,14 @@
+{% extends 'layout/base.html' %}
+
+{% block 'title' %}
+    Inicio
+{% endblock %}
+
+{% block 'content' %}
+    <h1>Bienvenido a tu gestor personal</h1>
+    <div class="cards">
+       <a href="{% url 'contact' %}" class=" card card1">Contactos</a>
+       <a href="{% url 'todo' %}" class="card card2">Tareas</a> 
+    </div>
+    
+{% endblock %}

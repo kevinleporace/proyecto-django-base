@@ -1,0 +1,26 @@
+{% extends 'layout/base.html' %}
+
+
+{% block 'title' %}
+    Tareas {{todo.title}}#todo es un id en este caso
+{% endblock %}
+
+
+{% block 'content' %}
+<span class="aux-btns">
+    <a href="{% url 'contact' %}"> Volver atras</a>
+</span>
+<ul class="list">
+    <li><b>Titulo:</b> {{todo.title}}</li>
+    <li><b>Descripcion:</b> {{todo.description}}</li>
+    <li><b>fecha de creacion:</b> {{todo.date}}</li>
+    <li><b>fecha de finalizacion:</b> {{todo.estimated_end}}</li>
+    <li><b>Prioridad(1..5):</b>{{todo.priority}}</li>
+    
+    
+
+</ul>
+
+
+    
+{% endblock %}

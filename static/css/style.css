@@ -1,0 +1,189 @@
+:root{
+    --color-primary:#2ea3f2 ;
+    --color-secondary: ;
+    --color-text: #666;
+    --font-text:roboto;
+    --font-title:cafe;
+}
+/* --------------main settings-------------- */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: var(--font-text);
+    color: var(--color-text);
+}
+
+@font-face{
+    font-family:roboto;
+    src:url('../fonts/roboto.ttf');
+}
+@font-face{
+    font-family:cafe;
+    src:url('../fonts/cafe.ttf');
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--font-roboto);
+}
+/* ------------------end main setings-----------------*/
+
+/*--------------- layout settings--------------------*/
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     width: 100vw;
+    height: 80px;  
+    background-color: #2ea3f2;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: var(--font-title);
+    padding: 10px;
+   
+}
+nav ul li a:hover{
+    color: var(--color-text);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 50px;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-text) ;
+
+    width: 50%;
+    list-style-type: none;
+}
+
+.list li {
+    padding: 20px;
+    width: 100%;
+    border-bottom: 1px solid var(--color-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.btn{
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-detail{
+    background-color: #2ea3f2;
+    color: white;
+}
+.btn-detail:hover{
+    background-color: white;
+    color: #2ea3f2;
+}
+
+
+.btn-edit{
+    background-color: orange;
+    color: white;
+}
+.btn-edit:hover{
+    background-color: white;
+    color: orange;
+}
+.btn-delete{
+    background-color: #ee1240;
+    color: white;
+} 
+.btn-delete:hover{
+    background-color: white;
+    color: #ee1240;
+}
+.search{
+    margin: 20px;
+    width: 50%;
+}
+.search-bar{
+    padding: 5px;
+    width: 80%;
+
+}
+.btn-search{
+    width: 19%;
+    background-color: #2ea3f2;
+    color: white;
+    outline: none;
+    border: 0;
+    box-shadow: 0;
+    cursor: pointer;
+}
+.btn-search:hover{
+    background-color:lightslategray;
+    color: #2ea3f2;
+}
+.aux-btns{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+}
+.aux-btns a{
+    padding-right:10px ;
+    text-decoration: none;
+}
+.alert-success{
+    width:100%;
+    padding: 15px;
+    background-color: rgb(75, 169, 75);
+    color: white;
+}
+/*-------------- end layout settings---------------- */
+
+/* -----index settings -----------------*/
+ 
+.cards{
+    display:flex;
+    justify-content: space-around;
+}
+
+.card{
+    width: 250px;
+    height: 250px;
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:lightgray;
+    text-decoration: none;
+    margin: 20px;
+}
+.cards:hover{
+    background-color: black;
+    color: lightgray;
+}
+.card1:hover{
+    background-color: rgb(64, 18, 18);
+    color: lightgray;
+}
+.card2:hover{
+    background-color: rgb(27, 18, 64);
+    color: lightgray;
+}
+/*---------end index settings-----------*/
